@@ -1,4 +1,4 @@
-package Java;
+//package Java;
 import java.util.*;
 public class IPA7 {
     public static void main(String[] args) {
