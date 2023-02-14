@@ -1,5 +1,3 @@
-package Java;
-
 import java.util.*;
 public class footwearProgram
 {
