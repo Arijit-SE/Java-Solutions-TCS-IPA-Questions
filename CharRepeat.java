@@ -1,38 +1,34 @@
-// aabbbcc = a2b3c1
+// aabbbc = a2b3c1
 // abbccc = a1b2c3
+//aaabbccc = a3b2c3
 import java.util.*;
 public class CharRepeat {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[]args)
+    {
+        Scanner sc= new Scanner(System.in);
         String s = sc.nextLine();
-        int count=1;
-        for (int i = 0; i < s.length(); i++) 
+        int i=0;
+        int count = 0;
+        char ch = s.charAt(i);
+        for (int k = 0; k < s.length(); k++) 
         {
-           if(i!=0 && s.charAt(i-1)==s.charAt(i) && i!=(s.length()-1))
-           {
+            if(ch==s.charAt(k))
+            {
                 count++;
-           }
-           else if(i==(s.length()-1))
-           {
-                if(s.charAt(i-1)!=(s.charAt(i)))
-                {
-                    System.out.print(s.charAt(i-1)+""+count);
-                    count =1;
-                    System.out.print(s.charAt(i)+""+count);
-                }
-                else
-                {
-                    count++;
-                    System.out.print(s.charAt(i)+""+count);
-                }
-           }
-           else if(i!=0 && s.charAt(i-1)!=(s.charAt(i)) && i!=(s.length()-1))
-           {
-                System.out.print(s.charAt(i-1)+""+count);
-                count = 1;
-           }
-        }
-        System.out.println();
+            }
+            else{
+                System.out.print(ch+""+count);
+                ch = s.charAt(k);
+                count =0;
+                k--;
+            }
 
+            if(ch == s.charAt(s.length()-1) && k==s.length()-1)
+            {
+                System.out.println(ch+""+count);
+            }
+
+        }
+        
     }
 }
