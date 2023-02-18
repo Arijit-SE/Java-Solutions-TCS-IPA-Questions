@@ -3,13 +3,23 @@ public class test {
     public static void main(String[]args)
     {
         Scanner sc= new Scanner(System.in);
-        String[] num = new String[5];
-        for(int i=0;i<5;i++)
+        String str = sc.nextLine();
+        String a = "";
+        int i, j;
+        for (i = 0; i < str.length(); i++) 
         {
-            num[i] = sc.nextLine();
+            for (j = 0; j < i; j++) 
+            {
+                if(str.charAt(i)==str.charAt(j))
+                {
+                    break;
+                }    
+            }
+            if(i==j)
+            {
+                a = a + str.charAt(i);
+            }
         }
-        System.out.println(Arrays.toString(num));
-        System.out.println(String.join(",",num));
-        System.out.println();
+        System.out.println(a);
     }
 }
