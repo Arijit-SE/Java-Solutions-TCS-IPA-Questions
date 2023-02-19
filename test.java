@@ -8,19 +8,13 @@ public class test {
     public static void main(String[]args)
     {
         Scanner sc= new Scanner(System.in);
-        int[] arr = new int[8];
-        for (int i = 0; i < arr.length; i++) 
+        String[] num = new String[5];
+        for(int i=0;i<5;i++)
         {
-            arr[i] = sc.nextInt();
+            num[i] = sc.nextLine();
         }
-        int num;
-        for (int i = 0; i < arr.length-1; i++) {
-            num = arr[i];
-            while(num+1 != arr[i+1])
-            {
-                System.out.print(num+1+" ");
-                num++;
-            }
-        }
+        System.out.println(Arrays.toString(num));
+        System.out.println(String.join(",",num));
+        System.out.println();
     }
 }

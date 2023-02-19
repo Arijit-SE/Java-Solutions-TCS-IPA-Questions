@@ -3,7 +3,7 @@ public class Remove_Duplicate {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        String ch = " ";
+        String ch = "";
         int i,j;
         for (i = 0; i < str.length(); i++) {
             for (j = 0; j < i; j++)
