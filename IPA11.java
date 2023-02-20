@@ -4,7 +4,7 @@ public class IPA11
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		Player[] p = new Player[4];
+		PlayerIPA[] p = new PlayerIPA[4];
 		for(int i=0; i<4; i++)
 		{
 			int a = sc.nextInt();sc.nextLine();
@@ -12,7 +12,7 @@ public class IPA11
 			String c = sc.nextLine();
 			int d = sc.nextInt();sc.nextLine();
 		
-			p[i] = new Player(a,b,c,d);
+			p[i] = new PlayerIPA(a,b,c,d);
 		}
 		String s = sc.nextLine();
 		String l = sc.nextLine();
@@ -38,7 +38,7 @@ public class IPA11
 		}
 		
 	}
-	public static int findPointsForGivenSkill(Player[]p,String s)
+	public static int findPointsForGivenSkill(PlayerIPA[]p,String s)
 	{
 		int sum = 0;
 		for(int i=0; i<p.length; i++)
@@ -57,7 +57,7 @@ public class IPA11
 			return 0;
 		}
 	}
-	public static int getPlayerBasedOnLevel(Player[]p,String s, String l)
+	public static int getPlayerBasedOnLevel(PlayerIPA[]p,String s, String l)
 	{
 		for(int i=0; i<p.length; i++)
 		{
