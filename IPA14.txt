@@ -1,4 +1,5 @@
 Create class Movie with below attributes: 
+
 movieName - String 
 company - String 
 genre - String 
