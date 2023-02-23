@@ -1,4 +1,5 @@
 Create a class called Employee with the below attributes:
+
 employeeld - int
 name - String
 branch - String
@@ -11,6 +12,7 @@ Implement two static methods findCountOfEmployeesUsingCompTransport and findEmpl
 in MyClass class.
 
 findCountOfEmployeesUsingCompTransport method: 
+----------------------------------------------
 This method will take an array of Employee object and a String parameter as input parameters. 
 This method will calculate and return the count of Employees who are all using company transport 
 in the given branch (String parameter passed).
@@ -18,6 +20,7 @@ If no Employee in the given branch using company transport in the array of Emplo
 the method should return 0.
 
 findEmployeeWithSecondHighestRating method: 
+--------------------------------------------
 This method will take an array of Employee objects as an input parameter. This method will return 
 the object of the second highest rating employee from the array of Employee objects who are not using 
 company transport.

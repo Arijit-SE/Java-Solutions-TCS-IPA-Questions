@@ -1,4 +1,3 @@
-package Java;
 import java.util.*;
 public class IPA6 {
     public static void main(String[] args) {

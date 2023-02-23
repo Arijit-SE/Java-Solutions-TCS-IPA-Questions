@@ -1,4 +1,4 @@
-package Java;
+
 import java.util.*;
 public class IPA5 {
     public static void main(String[]args)

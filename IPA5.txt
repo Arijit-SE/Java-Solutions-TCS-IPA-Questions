@@ -1,10 +1,12 @@
 Create a class Motel with the below attributes:
+
 motelId - int
 motelName - String
 dateOfBooking – String (in the format dd-mon-yyyy)
 noOfRoomsBooked – int
 cabFacility – String
 totalBill- double
+
 Restricted for circulation outside TCS Xplore 6
 The above attributes should be private, write getters, setters and parameterized constructor as 
 required.

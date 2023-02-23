@@ -1,6 +1,4 @@
-package Java;
-
-import java.util.Scanner;
+import java.util.*;
 
 public class MyClass {
     public static void main(String[] args) {
