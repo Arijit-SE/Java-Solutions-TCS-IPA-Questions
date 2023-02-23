@@ -47,7 +47,7 @@ input1:
 Arijit
 Math
 B
-22/09/2022
+22/09/2023
 101
 Priyanka
 English
@@ -57,7 +57,7 @@ A
 Shreosi
 History
 C
-12/05/2022
+13/05/2022
 105
 Tatan
 Physics
