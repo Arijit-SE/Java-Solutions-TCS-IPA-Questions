@@ -1,5 +1,5 @@
 import java.util.*;
-public class Antenna
+public class IPA18
 {
 	public static void main(String[] args)
 	{
