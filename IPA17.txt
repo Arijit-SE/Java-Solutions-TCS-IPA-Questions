@@ -69,10 +69,10 @@ A
 
 output1:
 
-Kamal
-Physics
 Priyanka
 English
+Tatan
+Physics
 2
 
 

@@ -3,7 +3,7 @@ public class IPA17
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Student[] s = new Student[4];
+        Stu[] s = new Stu[4];
         for (int i = 0; i < s.length; i++) 
         {
             int a = sc.nextInt();sc.nextLine();
@@ -11,12 +11,28 @@ public class IPA17
             String c = sc.nextLine();
             char d = sc.nextLine().charAt(0);
             String e = sc.nextLine();
+            String t="",m="",y="";
+            for(int j=0; j<e.length(); j++)
+            {
+                if(j<2)
+                {
+                    t = t+e.charAt(j);
+                }
+                else if(j>2 && j<5)
+                {
+                    m = m+e.charAt(j);
+                }
+                else if(j>5)
+                {
+                    y = y+e.charAt(j);
+                }
+            }
 
-            s[i] = new Student(a,b,c,d,e);
+            s[i] = new Stu(a,b,c,d,t,m,y);
         }
         char g = sc.nextLine().charAt(0);
         int m = sc.nextInt();sc.nextLine();
-        Student[] ans1 = findStudentByGradeAndMonth(s,g,m);
+        Stu[] ans1 = findStudentByGradeAndMonth(s,g,m);
         if(ans1!=null)
         {
             for (int i = 0; i < ans1.length; i++) 
@@ -31,18 +47,18 @@ public class IPA17
             System.out.println("No student found");
         }
     }
-    public static Student[] findStudentByGradeAndMonth(Student[]s, char g, int m)
+    public static Stu[] findStudentByGradeAndMonth(Stu[]s, char g, int m)
     {
-        Student[] arr = new Student[0];
-        String month = Integer.toString(m);
+        Stu[] arr = new Stu[0];
         for (int i = 0; i < s.length; i++) {
-            if(s[i].getGrade()==g && s[i].getDate().contains(month))
+            int mon = Integer.parseInt(s[i].getMonth());
+            if(s[i].getGrade()==g && mon == m)
             {
                 arr = Arrays.copyOf(arr,arr.length+1);
                 arr[arr.length-1] = s[i];
             }
         }
-        Student data;
+        Stu data;
         for (int i = 0; i < arr.length-1; i++) 
         {
             for (int j = i+1; j < arr.length; j++) 
@@ -65,21 +81,25 @@ public class IPA17
         }
     }
 }
-class Student
+class Stu
 {
     private int roll;
     private String name;
     private String sub;
-    private String date;
+    private String day;
+    private String month;
+    private String year;
     private char grade;
 
-    public Student(int roll, String name, String sub, char grade, String date)
+    public Stu(int roll, String name, String sub, char grade, String day, String month, String year)
     {
         this.roll = roll;
         this.name = name;
         this.sub = sub;
         this.grade = grade;
-        this.date = date;
+        this.day = day;
+        this.month = month;
+        this.year =year;
     }
 
     public int getRoll() {
@@ -106,12 +126,28 @@ class Student
         this.sub = sub;
     }
 
-    public String getDate() {
-        return date;
+    public String getDay() {
+        return day;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getMonth()
+    {
+        return month;
+    }
+    public void setMonth(String month)
+    {
+        this.month = month;
+    }
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
     }
 
     public char getGrade() {
