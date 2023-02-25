@@ -1,4 +1,5 @@
-package Java;
+/* Count number of vowel, consonent and digit into a string */
+
 import java.util.*;
 
 public class CountVowel {
