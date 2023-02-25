@@ -1,4 +1,9 @@
-import java.util.*;;
+/* Find first letter of each word in a string 
+    Input : Kalyani Govt. Eng. College
+    Output : KGEC
+*/ 
+
+import java.util.*;
 public class FirstLetterOfEachWord {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
