@@ -1,4 +1,13 @@
-package Java;
+/* Find occurance of a character in a string
+    Input
+    --------------
+ *  Priyanka
+ *  a
+ 
+ *  Output
+    ----------------
+ *  2
+ */
 import java.util.*;
 public class charCount {
     public static void main(String[] args) {
