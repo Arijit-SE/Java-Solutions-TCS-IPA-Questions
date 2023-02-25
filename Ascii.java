@@ -1,3 +1,9 @@
+/* Find the maximum Ascii valued word in a String
+ * Arijit = A
+ * priyanka = a
+ * Aa = A
+ */
+
 import java.util.*;
 public class Ascii {
     public static void main(String[] args) {
