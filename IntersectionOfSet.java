@@ -1,6 +1,6 @@
 // Intersection between two given set
 
-import java.util.*;;
+import java.util.*;
 public class IntersectionOfSet {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
