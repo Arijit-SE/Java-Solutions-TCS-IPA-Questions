@@ -1,3 +1,8 @@
+/* Find Characters of a string at odd index
+ * Arijit = rjt
+ * priyanka = ryna
+*/
+
 import java.util.*;
 public class Character_odd_place {
     public static void main(String[] args) {
