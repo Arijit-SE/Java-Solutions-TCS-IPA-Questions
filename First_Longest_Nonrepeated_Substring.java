@@ -1,4 +1,5 @@
-// Arijit = Arij
+// Find the first non repeated character substring
+//Arijit = Arij
 import java.util.*;
 public class First_Longest_Nonrepeated_Substring {
     public static void main(String[] args) {
