@@ -36,7 +36,7 @@ public class avg
             System.out.println("Index not found");
         }
         int sum=0, count=0;
-        if(upperIndex>0)
+        if(upperIndex>0 && lowerIndex+1<upperIndex)
         {
             for(int i=lowerIndex+1; i<upperIndex; i++)
             {
