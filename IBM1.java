@@ -1,5 +1,11 @@
-import java.util.*;
+/* Find maximum prime from diagonals of a matrix
+ * 7 8 9
+ * 4 5 6
+ * 1 2 3
+ * Max prime of two diagonal = 7
+ */
 
+import java.util.*;
 public class IBM1 {
     public static void main(String[]args)
     {
@@ -41,7 +47,7 @@ public class IBM1 {
             }
         }
         int count = 0, loop, num2=0;
-        int num;
+        int num=0;
         for(int i=0; i<p; i++)
         {
             dia[i]=dia1[i];
@@ -70,6 +76,6 @@ public class IBM1 {
                 num2 = num;
             }
         }
-        System.out.println("Max Prime : "+num);
+        System.out.println("Max Prime : "+num2);
     }
 }
