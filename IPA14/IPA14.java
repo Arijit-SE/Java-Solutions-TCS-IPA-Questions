@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+package IPA14;
 import java.util.*;
 public class IPA14 {
     public static void main(String[] args) {
