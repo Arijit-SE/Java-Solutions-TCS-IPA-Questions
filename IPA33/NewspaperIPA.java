@@ -1,3 +1,4 @@
+package IPA33;
 
 import java.util.*;
 public class NewspaperIPA {

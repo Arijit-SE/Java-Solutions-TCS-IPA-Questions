@@ -1,3 +1,17 @@
+/* Sort name by dictionary order
+    Input
+    -----------------
+    Arijit
+    Minaz
+    Arnab
+
+    Output
+    -------------------
+    Arijit
+    Arnab
+    Minaz
+ */
+
 import java.util.*;
 public class SortingName {
     public static void main(String[] args) {
