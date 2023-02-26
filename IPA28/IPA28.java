@@ -1,3 +1,4 @@
+package IPA28;
 import java.util.Scanner;
 public class IPA28 {
     public static void main(String[] args) {
