@@ -20,7 +20,7 @@ with the following attributes then print "No player found".
 
 Note:
 --------------
-1. First take input as the number of player object.
+1. First take input as the number of player object, then the player details
 2. Show the output as the dictionary order of the players name
 3. First print player id, and then use ' : ' sign and after that player name
     3 : Arijit
