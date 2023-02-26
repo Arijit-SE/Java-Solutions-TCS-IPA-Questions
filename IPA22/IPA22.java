@@ -1,3 +1,4 @@
+package IPA22;
 import java.util.*;
 public class IPA22
 {

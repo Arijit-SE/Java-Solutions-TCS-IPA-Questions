@@ -1,3 +1,4 @@
+package IPA26;
 import java.util.*;
 public class IPA26 {
     public static void main(String[] args) {

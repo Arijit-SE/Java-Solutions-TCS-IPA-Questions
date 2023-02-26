@@ -1,3 +1,4 @@
+package IPA23;
 import java.util.*;
 public class IPA23 {
     public static void main(String[] args) {

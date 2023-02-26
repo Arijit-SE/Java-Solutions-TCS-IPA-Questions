@@ -1,3 +1,4 @@
+package IPA25;
 import java.util.*;
 public class IPA25 {
     public static void main(String[] args) {

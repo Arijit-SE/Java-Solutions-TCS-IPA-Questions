@@ -1,3 +1,4 @@
+package IPA24;
 import java.util.*;
 public class IPA24
 {

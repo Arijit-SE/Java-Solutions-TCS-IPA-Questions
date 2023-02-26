@@ -1,4 +1,5 @@
-import java.util.*;
+package IPA21;
+import java.util.Scanner;
 public class IPA21
 {
 	public static void main(String[]args)

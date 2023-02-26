@@ -1,3 +1,4 @@
+package IPA20;
 import java.util.*;
 public class IPA20 {
     public static void main(String[] args) {
