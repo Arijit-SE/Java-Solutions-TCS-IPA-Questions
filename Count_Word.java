@@ -26,7 +26,7 @@ Output
 Number of word : 4
 */
 
-import java.util.*;;
+import java.util.*;
 public class Count_Word
 {
     public static void main(String[] args) 
