@@ -1,6 +1,5 @@
-//a2b3c1 = aabbb
+//a2b3c1 = aabbbc
 
-package Java;
 import java.util.*;
 public class RepeatedNumber {
     public static void main(String[] args) {
