@@ -1,3 +1,5 @@
+/* Minimum Ascii valued character in a String */
+
 import java.util.*;
 public class Smallest_Character {
     public static void main(String[] args) {
