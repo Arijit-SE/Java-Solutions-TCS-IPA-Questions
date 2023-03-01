@@ -1,3 +1,14 @@
+/* Count number of spaces and characters in a string 
+ * Input
+ * ---------
+ * Arijit is bad boy
+ * 
+ * Output
+ * ------------------
+ * Number of space : 3
+   Number of character : 14
+*/
+
 import java.util.*;
 public class Space_Count {
     public static void main(String[] args) {
