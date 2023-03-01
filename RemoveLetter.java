@@ -1,3 +1,13 @@
+/* Remove a character from a string
+ * Input
+ * --------------
+ * Arijit
+ * i
+ * Output
+ * ---------------
+ * Arjt
+ */
+
 import java.util.*;
 public class RemoveLetter 
 {
