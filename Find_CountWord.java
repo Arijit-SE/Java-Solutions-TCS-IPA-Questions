@@ -1,6 +1,6 @@
 /* Input : Home, Sweet Home
            Home
- * Output : Number of that word present in the word : 2
+ * Output : Number of that word present in the sentence : 2
  * 
  * Process
  * ----------
@@ -15,13 +15,29 @@ public class Find_CountWord
         String str = sc.nextLine();
         String[] arr = str.split(" ");
         String s = sc.nextLine();
-        int count=0;
+        String ch = "";
+        int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i].equals(s))
+            System.out.print(arr[i]+"|");
+        }
+        System.out.println();
+        for (int i = 0; i < arr.length; i++)
+        {
+            for (int j = 0; j < arr[i].length(); j++) 
+            {
+                if(Character.isLetter(arr[i].charAt(j)))
+                {
+                    ch = ch + arr[i].charAt(j);
+                }
+            }
+
+            System.out.println((i+1)+"> "+ch);
+            if(ch.equals(s))
             {
                 count++;
             }
+            ch = "";
         }
-        System.out.println("Number of that word present in the word : "+count);
+        System.out.println("Number of that word present in the Sentence : "+count);
     }
 }
