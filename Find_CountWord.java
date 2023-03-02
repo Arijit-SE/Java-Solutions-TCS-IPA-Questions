@@ -17,10 +17,7 @@ public class Find_CountWord
         String s = sc.nextLine();
         String ch = "";
         int count = 0;
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+"|");
-        }
-        System.out.println();
+
         for (int i = 0; i < arr.length; i++)
         {
             for (int j = 0; j < arr[i].length(); j++) 
