@@ -26,45 +26,25 @@ else it should print "There is no flower with given type".
 input1:
 
 123
-
 Yellow trout lilly
-
 3000
-
 5
-
 ephemerals
-
 345
-
 snowdrop
-
 2500
-
 4
-
 ephemerals
-
 321
-
 Yarrow
-
 1000
-
 4
-
 perennials
-
 213
-
 red trillium
-
 2250
-
 4
-
 ephemerals
-
 ephemerals
 
 

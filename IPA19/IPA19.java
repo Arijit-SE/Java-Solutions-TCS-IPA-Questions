@@ -29,13 +29,27 @@ public class IPA19
 	}
 	public static int findMinPriceByType(Flower[] fl, String s)
 	{
+		Flower[] arr = new Flower[0];
 		for(int i =0; i<fl.length; i++)
 		{
-			if(fl[i].getRating()>3)
+			if(fl[i].getType().equalsIgnoreCase(s) && fl[i].getRating()>3)
 			{
-				return fl[i].getFlowerId();
+				arr = Arrays.copyOf(arr,arr.length+1);
+				arr[arr.length-1] = fl[i];
 			}
 		}
+		if(arr.length>0)
+		{
+			Flower mini = arr[0];
+			for (int j = 1; j < arr.length; j++) 
+			{
+				if(mini.getPrice()>arr[j].getPrice())
+				{
+					mini = arr[j];
+				}
+			}
+			return mini.getFlowerId();
+		} 
 		return 0;
 	}
 }
