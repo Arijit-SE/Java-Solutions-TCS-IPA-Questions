@@ -54,32 +54,34 @@ public class Mobile {
     public static MobileDetails[] getSecondMin(MobileDetails[] m)
     {
         MobileDetails[] arr = new MobileDetails[0];
+        
         for (int i = 0; i < m.length-1; i++) 
         {
-            for (int j = i+1; j < arr.length; j++) 
+            for (int j = i+1; j < m.length; j++) 
             {
                 if(m[i].getPrice() > m[j].getPrice())
                 {
-                    MobileDetails k = m[j];
-                    m[j] = m[i];
-                    m[i] = k;
+                    MobileDetails k = m[i];
+                    m[i] = m[j];
+                    m[j] = k;
                 }
             }
         }
+        
         for (int i = 1; i < m.length; i++) {
-            if(m[0].getPrice()>m[i].getPrice())
+            if(m[0].getPrice()<m[i].getPrice())
             {
                 arr = Arrays.copyOf(arr,arr.length+1);
                 arr[arr.length-1] = m[i];
                 break;
             }
         }
-        for (int i = arr.length; i < m.length; i++) 
+        for (int j = 0; j < m.length; j++) 
         {
-            if(arr[0].getPrice()==m[i].getPrice())
+            if(arr[0].getPrice()==m[j].getPrice() && arr[0].getId()!=m[j].getId()) 
             {
                 arr = Arrays.copyOf(arr,arr.length+1);
-                arr[arr.length-1] = m[i];
+                arr[arr.length-1] = m[j];
             }
         }
         if(arr.length>0)
