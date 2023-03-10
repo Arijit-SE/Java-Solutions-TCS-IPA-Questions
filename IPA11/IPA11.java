@@ -73,14 +73,14 @@ public class IPA11
 	}
 
 }
-class Player
+class PlayerIPA
 {
 	private int playerId;
 	private String skill;
 	private String level;
 	private int points;
 
-	public Player(int playerId, String skill, String level, int points)
+	public PlayerIPA(int playerId, String skill, String level, int points)
 	{
 		this.playerId = playerId;
 		this.skill = skill;
