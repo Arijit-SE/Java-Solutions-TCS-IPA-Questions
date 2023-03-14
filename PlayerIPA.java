@@ -1,7 +1,4 @@
-
 import java.util.*;
-
-import IPA11.Player;
 public class PlayerIPA {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
