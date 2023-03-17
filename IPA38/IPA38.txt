@@ -54,7 +54,6 @@ Input1:
 boAt BassHeads
 boAt
 1220
-Restricted for circulation outside TCS Xplore 7
 true
 Over Ear Wired
 boAt
@@ -87,7 +86,6 @@ Over Ear Wired
 boAt
 1549
 false
-Restricted for circulation outside TCS Xplore 8
 In Ear with Mic
 JBL
 450
