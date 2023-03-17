@@ -8,8 +8,7 @@ available- boolean
 The above attributes should be private, write getters, setters and parameterized constructor as required.
 
 Create class Solution with main method.
-Implement two static methods - findTotalPriceForGivenBrand and 
-findAvailableHeadsetWithSecondMinPrice in Solution class.
+Implement two static methods - findTotalPriceForGivenBrand and findAvailableHeadsetWithSecondMinPrice in Solution class.
 
 findTotalPriceForGivenBrand method:
 --------------------------------------
@@ -18,9 +17,8 @@ If no Headsets with the given brand is present in the array of Headsets objects,
 
 findAvailableHeadsetWithSecondMinPrice method:
 -----------------------------------------------
-This method will take array of Headset objects as an input parameter and returns the 
-available Headset object with the second lowest/minimum price from the given array of 
-objects. 
+This method will take array of Headset objects as an input parameter and returns the available Headset object with the 
+second lowest/minimum price from the given array of objects. 
 
 If no Headsets with the above condition is present in the array of Headsets objects, then the method should return null.
 
