@@ -28,7 +28,6 @@ public class Find_CountWord
                 }
             }
 
-            System.out.println((i+1)+"> "+ch);
             if(ch.equals(s))
             {
                 count++;
