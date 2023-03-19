@@ -11,24 +11,19 @@ implement two static methods searchAntennaByName and sortAntennaByVSWR in MyClas
 
 
 searchAntennaByName :
-  This method will take an array of Antenna objects and the
-string value as input parameter.The method will find out Antenna name(String parameter
-passed) .it will return Antennaid if found.if there is no Antenna that matches then the
-method will return zero.
-the main method should print the antennaid,if the returned value is not 0.if the
-returned value is 0 then print,"There is no antenna with the given parameter".
+---------------------------------------
+This method will take an array of Antenna objects and the string value as input parameter.The method will find out Antenna name(String parameterpassed).
+It will return Antennaid if found.if there is no Antenna that matches then the method will return zero.
+The main method should print the antennaid,if the returned value is not 0.if the returned value is 0 then print,"There is no antenna with the given parameter".
 
 
 sortAntennaByVSWR:
+--------------------------------------
 This method will take an array of Antenna Objects and a double value as input.
-this method will return an array of Antenna objects sorted in ascending orderof their
+This method will return an array of Antenna objects sorted in ascending orderof their antennaVSWR, which is less than VSWR(double value passed).       
 
-
-antennaVSWR. which is less than VSWR(double value passed)       
-
-  the main method should print name of the project leads from the returned array
-if the returned value is not null.if the returned value is null then main method should
-print "No Antenna found";
+The main method should print name of the project leads from the returned array if the returned value is not null.if the returned value is null then main method 
+should print "No Antenna found";
 
 
 input1:
