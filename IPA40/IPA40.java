@@ -34,6 +34,10 @@ public class IPA40 {
             System.out.println(ans2.getYear());
             System.out.println(ans2.getPrice());
         }
+        else
+        {
+            System.out.println("Sorry - No car is available");
+        }
     }
     public static Car findMostExpensiveCar(Car[] c)
     {
