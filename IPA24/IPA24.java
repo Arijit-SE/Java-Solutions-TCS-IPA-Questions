@@ -13,7 +13,7 @@ public class IPA24
 
             in[i] = new Inventory(a, b, c, d);
         }
-        int lim = sc.nextInt();sc.nextLine();
+        int lim = sc.nextInt();
         Inventory[] ans = Replenish(in,lim);
         if(ans!=null)
         {
