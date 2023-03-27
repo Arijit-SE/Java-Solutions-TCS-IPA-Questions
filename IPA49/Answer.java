@@ -17,10 +17,12 @@ public class Answer
         }
         boolean s = sc.nextBoolean();sc.nextLine();
         String t = sc.nextLine();
-        Bill ans1 = findBillWithMaxBillAmountBasedOnStatus(bill,s);
+        Bill ans1[] = findBillWithMaxBillAmountBasedOnStatus(bill,s);
         if(ans1!=null)
         {
-            System.out.println(ans1.getBillNo()+"#"+ans1.getName());
+            for (int i = 0; i < ans1.length; i++) {
+                System.out.println(ans1[i].getBillNo()+"#"+ans1[i].getName());
+            }
         }
         else
         {
@@ -36,26 +38,36 @@ public class Answer
             System.out.println("There are no bills with given type of connection");
         }
     } 
-    public static Bill findBillWithMaxBillAmountBasedOnStatus(Bill[] b, boolean s)
+    public static Bill[] findBillWithMaxBillAmountBasedOnStatus(Bill[] b, boolean s)
     {
+        double max = b[0].getBillAmount();
+        for (int i = 0; i < b.length; i++) {
+            if(b[i].getBillAmount()>max)
+            {
+                max = b[i].getBillAmount();
+            }
+        }
         Bill[] bill = new Bill[0];
         for (int i = 0; i < b.length; i++) {
-            if(b[i].getStatus()==s)
+            if(b[i].getStatus()==s && b[i].getBillAmount()==max)
             {
                 bill = Arrays.copyOf(bill,bill.length+1);
                 bill[bill.length-1] = b[i];
             }
         }
-        Bill max = bill[0];
-        for (int i = 0; i < bill.length; i++) {
-            if(bill[i].getBillAmount()>max.getBillAmount())
-            {
-                max = bill[i];
-            }
-        }
-        if(max!=null)
+        if(bill.length>0)
         {
-            return max;
+            for (int i = 0; i < bill.length; i++) {
+                for (int j = i; j < bill.length; j++) {
+                    if(bill[i].getBillNo()>bill[j].getBillNo())
+                    {
+                        Bill k = bill[i];
+                        bill[i] = bill[j];
+                        bill[j] = k;
+                    }
+                }
+            }
+            return bill;
         }
         return null;
     }
