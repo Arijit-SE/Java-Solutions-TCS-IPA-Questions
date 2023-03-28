@@ -68,7 +68,7 @@ public class Solution
             }
             for(int i=0; i<e.length; i++)
             {
-                if(det[0].getSalary() == e[i].getSalary() && e[i]!=det[0])
+                if(det[0].getSalary() == e[i].getSalary() && e[i].getId()!=det[0].getId())
                 {
                     det = Arrays.copyOf(det, det.length+1);
                     det[det.length-1] = e[i];
