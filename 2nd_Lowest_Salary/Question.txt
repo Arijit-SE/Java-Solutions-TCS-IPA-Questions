@@ -35,7 +35,7 @@ The above mentioned static methods should be called from the main method.
 For getEmployeeWithSecondLowestSalary method - The main method should print the employeeId followed by # and employeeName
 from the returned Employee object, if the returned value is not null.
 
-If the returned value is null then it should print "null".
+If the returned value is null then it should print "Null".
 
 For countEmployeesBasedOnAge method - The main method should print the count of employees as it is, if the returned value
 is greater than 0, otherwise it should print "No employee found for the given age".
