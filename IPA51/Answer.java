@@ -65,7 +65,9 @@ public class Answer {
 }
 
 class Movie{
-    private int movieId,rating,budget;
+    private int movieId;
+    private int rating;
+    private int budget;
     private String director;
 
     public int getMovieId() {
