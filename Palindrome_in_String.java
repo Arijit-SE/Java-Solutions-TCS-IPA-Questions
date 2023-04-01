@@ -2,7 +2,7 @@
  * 
  * Input:
  * ----------------
- * My name is Nitin and I can speak malayalam
+ * My name is nitin and I can speak malayalam
  * 
  * Output:
  * ----------------
