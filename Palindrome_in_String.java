@@ -1,11 +1,25 @@
+/* Find the palindrome words from the sentence and print them and also count
+ * 
+ * Input:
+ * ----------------
+ * My name is Nitin and I can speak malayalam
+ * 
+ * Output:
+ * ----------------
+ * nitin
+ * I
+ * malayalam
+ * 3
+ */
+
 import java.util.*;
-public class Palindrom_in_String
+public class Palindrome_in_String
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String s = sc.nextLine();
-        String[] pal = findPalindrom(s);
+        String[] pal = findPalindrome(s);
         if(pal!=null)
         {
             System.out.println("The palindroms are :");
@@ -20,7 +34,7 @@ public class Palindrom_in_String
         }
 
     }
-    public static boolean isPalindrom(String n)
+    public static boolean isPalindrome(String n)
     {
         for (int i = 0; i < n.length(); i++) 
         {
@@ -31,12 +45,12 @@ public class Palindrom_in_String
         }
         return true;
     }
-    public static String[] findPalindrom(String s)
+    public static String[] findPalindrome(String s)
     {
         String[] arr = s.split(" ");
         String[] pal = new String[0];
         for (int i = 0; i < arr.length; i++) {
-            if(isPalindrom(arr[i]))
+            if(isPalindrome(arr[i]))
             {
                 pal = Arrays.copyOf(pal, pal.length+1);
                 pal[pal.length-1] = arr[i];
