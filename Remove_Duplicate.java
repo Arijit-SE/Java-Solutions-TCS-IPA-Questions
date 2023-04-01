@@ -1,3 +1,9 @@
+/* Remove duplicate characters in a string
+ * 
+ * Input : Arijit Ghosh
+ * Output : Arijt Ghos
+ */
+
 import java.util.*;
 public class Remove_Duplicate {
     public static void main(String[] args) {
