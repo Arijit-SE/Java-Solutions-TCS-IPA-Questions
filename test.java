@@ -1,16 +1,35 @@
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-
-public class test {
-  public static void main(String[] args) {
-    // Create a new Timestamp object with fractional seconds
-    Timestamp timestamp = Timestamp.valueOf("2023-03-29 13:01:42.0");
-
-    // Format the Timestamp to display only the date and time components without the fractional seconds
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    String formattedTimestamp = sdf.format(timestamp);
-
-    System.out.println("Original Timestamp: " + timestamp);
-    System.out.println("Formatted Timestamp without fractional seconds: " + formattedTimestamp);
-  }
+import java.util.*;
+public class test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int m=Integer.parseInt(sc.nextLine());
+        int n=Integer.parseInt(sc.nextLine());
+        int[] arr1=new int[m];
+        int[] arr2=new int[n];
+        ArrayList<Integer> ar=new ArrayList();
+        for(int j=0;j<m;j++){
+            arr1[j]=sc.nextInt();
+            
+        }
+        for(int i=0;i<n;i++){
+            arr2[i]=sc.nextInt();
+        }
+        
+        for(int j=0;j<m;j++){
+            boolean flag=true;
+            for(int i=0;i<n;i++){
+                if(arr1[j]==arr2[i])
+                {
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag){
+                ar.add(arr1[j]);        
+            }
+        }
+        for(int j: ar){
+        System.out.print(j+"");
+    }
+} 
 }
