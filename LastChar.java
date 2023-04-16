@@ -1,3 +1,9 @@
+/* Last Character of each word of a sentence
+
+ * Input: Kalyani Government Engineering College
+ * Output: itge
+ */
+
 import java.util.*;
 public class LastChar {
     public static void main(String[] args) 
