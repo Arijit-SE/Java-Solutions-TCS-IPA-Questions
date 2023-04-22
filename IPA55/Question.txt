@@ -16,7 +16,7 @@ findAvgPrice method:
 ----------------------------------
 This method will take two input parameters - array of Resort objects and a string parameter.
 The method will return the average of the prices from resort objects whose Category matched with passed as parameter and rating
-will greater that 4.
+will greater than 4.
 If no resort present found, then the method should return 0.
 
 Note : All the searches should be case insensitive.
