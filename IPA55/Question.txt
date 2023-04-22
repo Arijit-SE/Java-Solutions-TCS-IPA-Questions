@@ -55,5 +55,4 @@ JKL
 
 Output
 ----------
-200
-1401
+The average price of 3 star:5817
