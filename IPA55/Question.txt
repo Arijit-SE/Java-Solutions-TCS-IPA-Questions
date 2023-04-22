@@ -23,7 +23,7 @@ Note : All the searches should be case insensitive.
 
 These above mentioned static methods should be called from the main method.
 
-For findAvgBudgetByDirector method - The main method should print the average price as it is if the returned value is 
+For findAvgPrice method - The main method should print the average price as it is if the returned value is 
 greater than 0, or it should print "No such Resort found".
 
 Before calling these static methods in main, use Scanner object to read the values of four resort objects referring attributes 
