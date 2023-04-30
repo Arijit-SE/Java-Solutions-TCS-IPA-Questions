@@ -1,35 +1,52 @@
+/* Count the sum of prime digits in a given number
+ * 
+ * Input: 2345678910
+ * Output: 17
+ * 
+ * Explaination: 2+3+5+7 = 17
+ */
+
 import java.util.*;
-public class test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int m=Integer.parseInt(sc.nextLine());
-        int n=Integer.parseInt(sc.nextLine());
-        int[] arr1=new int[m];
-        int[] arr2=new int[n];
-        ArrayList<Integer> ar=new ArrayList();
-        for(int j=0;j<m;j++){
-            arr1[j]=sc.nextInt();
-            
+public class test
+{
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String s = sc.nextLine();
+        int sum = SumPrime(s);
+        if(sum>0)
+        {
+            System.out.println(sum);
         }
-        for(int i=0;i<n;i++){
-            arr2[i]=sc.nextInt();
+        else
+        {
+            System.out.println("No prime digits are there");
         }
-        
-        for(int j=0;j<m;j++){
-            boolean flag=true;
-            for(int i=0;i<n;i++){
-                if(arr1[j]==arr2[i])
-                {
-                    flag=false;
-                    break;
-                }
-            }
-            if(flag){
-                ar.add(arr1[j]);        
-            }
-        }
-        for(int j: ar){
-        System.out.print(j+"");
     }
-} 
+    public static int SumPrime(String s)
+    {
+        int sum = 0;
+        for(int i=0; i<s.length(); i++)
+        {
+            if(isPrime(s.charAt(i)))
+            {
+                sum += Integer.parseInt(String.valueOf(s.charAt(i)));
+            }
+        }
+        return sum;
+    }
+    public static boolean isPrime(char a)
+    {
+        int num = Integer.parseInt(String.valueOf(a));
+        for (int i = 2; i < num; i++) {
+            if(a%i == 0)
+            {
+                return false;
+            }
+        }
+        if(num<2)
+        {
+            return false;
+        }
+        return true;
+    }
 }
