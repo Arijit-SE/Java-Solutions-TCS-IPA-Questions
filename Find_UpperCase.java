@@ -1,4 +1,4 @@
-/*Given a sentence, count the number of words that start with a capital letter.
+/*Given a sentence, Find words that start with a capital letter.
 
 For example, in the sentence "The quick Brown Fox jumps over the lazy dog", there are three words that start with a 
 capital letter: "The", "Brown", and "Fox". */
