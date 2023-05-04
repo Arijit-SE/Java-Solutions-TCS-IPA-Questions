@@ -4,7 +4,6 @@
  * 
  * Input: abbcddeff
  * Output: abcdef
-
  */
 
 import java.util.*;
