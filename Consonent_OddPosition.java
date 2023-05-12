@@ -11,8 +11,8 @@ public class Consonent_OddPosition {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine().toLowerCase();
-        String v = "aeiou";
+        String s = sc.nextLine();
+        String v = "aeiouAEIOU";
         for (int i = 0; i < s.length(); i++) {
             if((i+1)%2!=0 && !v.contains(Character.toString(s.charAt(i))) && s.charAt(i)!=' ')
             {
@@ -26,8 +26,8 @@ public class Consonent_OddPosition {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine().toLowerCase();
-        char[] ch = {'a', 'e', 'i', 'o', 'u'};
+        String s = sc.nextLine();
+        char[] ch = {'a', 'e', 'i', 'o', 'u', 'A','E', 'I', 'O', 'U'};
         for (int i = 0; i < s.length(); i++) {
             boolean test = true;
             for (int j = 0; j < ch.length; j++) {
