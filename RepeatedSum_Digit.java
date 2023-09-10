@@ -4,7 +4,7 @@ continuing until the sum becomes one digit.
 Input : 195
 Output : 6
 
-Explanation: 1+9+5 =15>6, so 1+5=6 */
+Explanation: 1+9+5 =15>9, so 1+5=6 */
 
 import java.util.*;
 public class RepeatedSum_Digit 
